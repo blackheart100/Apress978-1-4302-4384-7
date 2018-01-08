@@ -1,0 +1,60 @@
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="WorkflowFoundation.IFAct" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Text</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>WorkflowFoundation</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <If>
+    <If.Condition>
+      <InArgument x:TypeArguments="x:Boolean">
+        <mca:CSharpValue x:TypeArguments="x:Boolean">1==1</mca:CSharpValue>
+      </InArgument>
+    </If.Condition>
+    <If.Then>
+      <WriteLine Text="如果是对的走我" sap2010:WorkflowViewState.IdRef="WriteLine_1" />
+    </If.Then>
+    <If.Else>
+      <WriteLine Text="我是Else" sap2010:WorkflowViewState.IdRef="WriteLine_2" />
+    </If.Else>
+    <sap2010:WorkflowViewState.IdRef>If_1</sap2010:WorkflowViewState.IdRef>
+    <sads:DebugSymbol.Symbol>d2NEOlxUaG1vYXNIZVxTUEFcUmVwb3NcQXByZXNzOTc4LTEtNDMwMi00Mzg0LTdcQXByZXNzOTc4LTEtNDMwMi00Mzg0LTdcV29ya2Zsb3dGb3VuZGF0aW9uXElGQWN0LnhhbWwGJAMyCAIBAScJJ0wCAQIrBytRAgEFLgcuUAIBAysXKyACAQYuFy4fAgEE</sads:DebugSymbol.Symbol>
+  </If>
+  <sap2010:WorkflowViewState.IdRef>WorkflowFoundation.IFAct_1</sap2010:WorkflowViewState.IdRef>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="WriteLine_1" sap:VirtualizedContainerService.HintSize="210,62" />
+      <sap2010:ViewStateData Id="WriteLine_2" sap:VirtualizedContainerService.HintSize="210,61" />
+      <sap2010:ViewStateData Id="If_1" sap:VirtualizedContainerService.HintSize="464,212" />
+      <sap2010:ViewStateData Id="WorkflowFoundation.IFAct_1" sap:VirtualizedContainerService.HintSize="504,292" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</Activity>
