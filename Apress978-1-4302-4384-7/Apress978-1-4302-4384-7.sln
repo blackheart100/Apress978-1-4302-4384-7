@@ -5,6 +5,7 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{2F661626-FCCD-4A6B-A893-9ABBA6F80118}"
 	ProjectSection(SolutionItems) = preProject
+		1.pdf = 1.pdf
 		3.pdf = 3.pdf
 	EndProjectSection
 EndProject
