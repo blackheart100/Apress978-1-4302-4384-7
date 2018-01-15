@@ -10,7 +10,7 @@ namespace WorkflowFoundation
     {
         static void Main(string[] args)
         {
-            Activity workflow1 = new ForEachAct();
+            Activity workflow1 = new StateMachineAct();
             WorkflowInvoker.Invoke(workflow1);
             Console.ReadKey();
         }

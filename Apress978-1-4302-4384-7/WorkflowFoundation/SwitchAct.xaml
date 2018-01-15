@@ -1,0 +1,62 @@
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="WorkflowFoundation.SwitchAct" this:SwitchAct.Score="58"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:this="clr-namespace:WorkflowFoundation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="Score" Type="InArgument(x:Int32)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap2010:WorkflowViewState.IdRef>WorkflowFoundation.SwitchAct_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Text</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>WorkflowFoundation</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Switch x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+    <Switch.Expression>
+      <InArgument x:TypeArguments="x:Int32">
+        <mca:CSharpValue x:TypeArguments="x:Int32">Score</mca:CSharpValue>
+      </InArgument>
+    </Switch.Expression>
+    <WriteLine x:Key="78" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="You just jiGe" />
+    <WriteLine x:Key="58" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="You are not jiGe" />
+    <WriteLine x:Key="90" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="You are Great!" />
+    <sads:DebugSymbol.Symbol>d2dEOlxUaG1vYXNIZVxTUEFcUmVwb3NcQXByZXNzOTc4LTEtNDMwMi00Mzg0LTdcQXByZXNzOTc4LTEtNDMwMi00Mzg0LTdcV29ya2Zsb3dGb3VuZGF0aW9uXFN3aXRjaEFjdC54YW1sCQFnAWoBAioDNAwCAQEtCS1LAgECMAUwYAIBCDEFMWMCAQYyBTJhAgEEME4wXQIBCTFOMWACAQcyTjJeAgEF</sads:DebugSymbol.Symbol>
+  </Switch>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="WriteLine_1" sap:VirtualizedContainerService.HintSize="210,62" />
+      <sap2010:ViewStateData Id="WriteLine_2" sap:VirtualizedContainerService.HintSize="210,62" />
+      <sap2010:ViewStateData Id="WriteLine_3" sap:VirtualizedContainerService.HintSize="210,62" />
+      <sap2010:ViewStateData Id="Switch`1_1" sap:VirtualizedContainerService.HintSize="476,292" />
+      <sap2010:ViewStateData Id="WorkflowFoundation.SwitchAct_1" sap:VirtualizedContainerService.HintSize="516,372" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</Activity>

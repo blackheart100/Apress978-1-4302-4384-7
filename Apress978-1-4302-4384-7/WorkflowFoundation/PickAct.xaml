@@ -1,0 +1,66 @@
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="WorkflowFoundation.PickAct" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Text</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>WorkflowFoundation</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Pick>
+    <PickBranch DisplayName="Branch1">
+      <PickBranch.Trigger>
+        <Delay Duration="00:00:05" sap2010:WorkflowViewState.IdRef="Delay_1" />
+      </PickBranch.Trigger>
+      <WriteLine Text="External event happened" sap2010:WorkflowViewState.IdRef="WriteLine_1" />
+      <sap2010:WorkflowViewState.IdRef>PickBranch_1</sap2010:WorkflowViewState.IdRef>
+    </PickBranch>
+    <PickBranch DisplayName="Branch2">
+      <PickBranch.Trigger>
+        <Delay Duration="00:00:05" sap2010:WorkflowViewState.IdRef="Delay_2" />
+      </PickBranch.Trigger>
+      <WriteLine Text="External event never happened" sap2010:WorkflowViewState.IdRef="WriteLine_2" />
+      <sap2010:WorkflowViewState.IdRef>PickBranch_2</sap2010:WorkflowViewState.IdRef>
+    </PickBranch>
+    <sap2010:WorkflowViewState.IdRef>Pick_1</sap2010:WorkflowViewState.IdRef>
+    <sads:DebugSymbol.Symbol>d2VEOlxUaG1vYXNIZVxTUEFcUmVwb3NcQXByZXNzOTc4LTEtNDMwMi00Mzg0LTdcQXByZXNzOTc4LTEtNDMwMi00Mzg0LTdcV29ya2Zsb3dGb3VuZGF0aW9uXFBpY2tBY3QueGFtbAsjAzQKAgEBJAUqEgIBBysFMRICAQImCSZQAgEKKAcoYQIBCC0JLVACAQUvBy9nAgEDJhkmIwIBCygXKDACAQktGS0jAgEGLxcvNgIBBA==</sads:DebugSymbol.Symbol>
+  </Pick>
+  <sap2010:WorkflowViewState.IdRef>WorkflowFoundation.PickAct_1</sap2010:WorkflowViewState.IdRef>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="Delay_1" sap:VirtualizedContainerService.HintSize="200,22" />
+      <sap2010:ViewStateData Id="WriteLine_1" sap:VirtualizedContainerService.HintSize="210,62" />
+      <sap2010:ViewStateData Id="PickBranch_1" sap:VirtualizedContainerService.HintSize="240,320" />
+      <sap2010:ViewStateData Id="Delay_2" sap:VirtualizedContainerService.HintSize="200,22" />
+      <sap2010:ViewStateData Id="WriteLine_2" sap:VirtualizedContainerService.HintSize="210,62" />
+      <sap2010:ViewStateData Id="PickBranch_2" sap:VirtualizedContainerService.HintSize="240,320" />
+      <sap2010:ViewStateData Id="Pick_1" sap:VirtualizedContainerService.HintSize="634,366" />
+      <sap2010:ViewStateData Id="WorkflowFoundation.PickAct_1" sap:VirtualizedContainerService.HintSize="674,446" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</Activity>
